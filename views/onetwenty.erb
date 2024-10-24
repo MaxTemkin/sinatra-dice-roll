@@ -1,0 +1,9 @@
+<h1><%= @name %> Outcome</h1>
+
+<% if @first_dice == 1 %>
+  <p style="color: red"><%= @result %></p>
+<% elsif @first_dice == 20 %>
+  <p style="color: green"><%= @result %></p>
+<% else %>
+  <p><%= @result %></p>
+<% end %>
